@@ -209,10 +209,6 @@ fun MainScreen(
                                     checked = isSelected,
                                     onCheckedChange = { onToggleSelection(note.id) }
                                 )
-                            } else {
-                                IconButton(onClick = {}) {
-
-                                }
                             }
                         }
                     }

@@ -26,9 +26,6 @@ class MainViewModel @Inject constructor(
     private val getAllNotesUseCase: GetAllNotesUseCase
 ) : ViewModel() {
 
-    /*val uiState = getAllNotesUseCase.invoke()
-        .map { UiState(it) }
-        .stateIn(viewModelScope, SharingStarted.Eagerly, UiState())*/
 
     private val _uiState = MutableStateFlow(UiState())
     val uiState: StateFlow<UiState> = _uiState.asStateFlow()
